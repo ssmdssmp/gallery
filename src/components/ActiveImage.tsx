@@ -5,7 +5,7 @@ const ActiveImage = () => {
   const { activeImage, isLoading } = useAppSelector(({ gallery }) => gallery);
 
   return (
-    <div className="w-[600px] h-[500px] relative rounded-md border border-white overflow-hidden">
+    <div className="w-[600px] h-[500px] relative rounded-md overflow-hidden shadow-lg">
       <img
         className="w-full h-full object-cover"
         src={activeImage.urls.regular}

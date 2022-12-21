@@ -23,8 +23,8 @@ const List = () => {
         }}
         className={
           image.id === activeImage.id
-            ? "h-20 cursor-pointer rounded-md w-32  overflow-hidden border-2 border-pink-400"
-            : "h-20 cursor-pointer rounded-md w-32   overflow-hidden"
+            ? "h-20  shadow-lg cursor-pointer rounded-md w-32  overflow-hidden border-2 border-pink-400"
+            : "h-20  shadow-lg cursor-pointer rounded-md w-32   overflow-hidden"
         }
       >
         <img src={image.urls.small} alt="" />
