@@ -1,5 +1,4 @@
 import { useAppSelector } from "../hooks/redux";
-import { IImage } from "../types/Image";
 
 const ActiveImage = () => {
   const { activeImage, isLoading } = useAppSelector(({ gallery }) => gallery);
@@ -12,7 +11,9 @@ const ActiveImage = () => {
         alt="#"
       />
       <p className="absolute bottom-10 m-auto text-white text-2xl">
-        {activeImage.user.first_name + " " + activeImage.user.last_name}
+        {activeImage.user.last_name
+          ? activeImage.user.first_name + " " + activeImage.user.last_name
+          : activeImage.user.first_name}
       </p>
 
       {isLoading && (
