@@ -7,7 +7,7 @@ const List = () => {
   const { list, activeImage, currentPage } = useAppSelector(
     ({ gallery }) => gallery
   );
-
+  console.log(list);
   const dispatch = useAppDispatch();
   const ListImage = ({ image }: { image: IImage }) => {
     return (

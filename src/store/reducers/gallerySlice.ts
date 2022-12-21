@@ -14,6 +14,10 @@ const initialState: IGalleryState = {
       small: "",
       regular: "",
     },
+    user: {
+      first_name: "",
+      last_name: "",
+    },
   },
   list: [],
   currentPage: 2,
